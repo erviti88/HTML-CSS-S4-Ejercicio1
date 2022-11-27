@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS S4 Ejercicio1</title>
+
+    <!--LOAD-FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     
     <!--LOAD-CSS-->
     <link rel="stylesheet" href="css/style.css">
@@ -29,25 +35,93 @@
                     <li class="nav-icons__li"><a href="#" class="nav-icons__a"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li class="nav-icons__li"><a href="#" class="nav-icons__a"><i class="fa-solid fa-user"></i></a></li>
                     <li class="nav-icons__li"><a href="#" class="nav-icons__a"><i class="fa-solid fa-location-dot"></i></a></li>
-                    <li class="nav-icons__li"><a href="#" class="nav-icons__a"><b>BMW</b></a></li>
+                    <li class="nav-icons__li"><a href="#" class="nav-icons__a"><img src="img/logo.svg" alt="BMW logo" class="nav-icon__logo"></a></li>
                 </ul>
             </nav>
             <!--END-NAV-->
             <div class="header__hero-text">
                 <h2 class="hero-text__h2">TU BMW CON DISPONIBILIDAD INMEDIATA</h2>
                 <h3 class="hero-text__h3">VEHICULOS NUEVOS EN STOCK</h3>
+                <button class="hero-text__btn">Descúbrelo</button>
             </div>
         </div>
     </header>
     <!--END-HEADER-->
     <!--START-MAIN-->
     <main class="main">
-
+        <div class="main__container">
+            <section class="section__products">
+                <nav class="products__filter">
+                    <ul class="filter-nav__ul">
+                        <li class="filter-nav__li filter-nav__li--active"><a href="#" class="filter-nav__a filter-nav__a--active">Cabrio</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Berlina</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Compacto</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Coupé</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">BMW i</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Todocamino</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Touring</a></li>
+                        <li class="filter-nav__li"><a href="#" class="filter-nav__a">Roadster</a></li>
+                    </ul>
+                </nav>
+                <div class="products__product-gallery">
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_01.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_02.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_01.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_02.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_01.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_02.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_01.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_02.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_01.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                    <div class="product-gallery__item">
+                        <a href="#" class="item__a"><img src="img/image_02.jpg" alt="BMW 1" class="img"></a>
+                        <h4>BMW Serie 2 cabrio</h4>
+                        <p>Desde 25.000€</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <!--END-MAIN-->
     <!--START-FOOTER-->
     <footer class="footer">
-
+        
     </footer>
     <!--END-FOOTER-->
 </body>
