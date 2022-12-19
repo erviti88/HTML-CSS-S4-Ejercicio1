@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
 body, a, p {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.4;
 }
 
 ul {
@@ -19,16 +26,26 @@ ul {
 
 img {
     max-width: 100%;
+    vertical-align: middle;
 }
 
+hr {
+    margin: 1em 0;
+    border: 2px solid #006fb9;
+}
 
+.icon__img {
+    margin-top: 1em;
+}
 
 .header {
     width: 100%;
     height: 100vh;
     background-image: url(../img/bmw_bg.jpg);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .header__nav {
@@ -67,7 +84,9 @@ img {
     color:white;
 }
 
-
+.main-nav__a:hover {
+    text-decoration: underline;
+}
 
 .nav-icons__a {
     color: white;
@@ -98,6 +117,7 @@ img {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .main {
@@ -133,17 +153,125 @@ img {
     font-weight: bold;
 }
 
+.overlay {
+    overflow: hidden;
+}
+
 .products__product-gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
     padding: 1em 0;
+    
 }
 
 .product-gallery__item {
-    width: 25%;
-    padding: 1em 0.5em;
+    width: calc(25% - 1em);
+    padding: 0 0 2em;
 }
 
-.item__a:hover {
-    filter: grayscale(100%);
+.item__link {
+    color: #006fb9;
+}
+
+.item__link:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.item__img {
+    transition: transform 0.3s;
+}
+
+.item__img:hover {
+    transform:  scale(1.2);
+}
+
+.section__services {
+    display: flex;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.services__service-info {
+    width: 25%;
+    padding: 1em;
+    border: 1px solid #b8b8b8;
+}
+
+.section__extra-info {
+    display: flex;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.extra-info__item {
+    width: 50%;
+    padding: 1em;
+    border: 1px solid #b8b8b8;
+}
+
+.section__service-icons {
+    display: flex;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.service-icons_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    width: 25%;
+    padding: 1em 0;
+}
+
+
+.footer {
+    background-color: #e5e5e5;
+}
+
+.footer__container {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 4em 0;
+    display: flex;
+    gap: 1em;
+}
+
+.footer__nav {
+    width: 25%;
+}
+
+.footer-nav__li {
+    margin: 0.5em 0;
+}
+
+.footer-nav__a, .legal-nav__a {
+    color: #8f8f8f;
+    font-weight: bolder;
+}
+
+.footer-nav__a:hover, .legal-nav__a:hover {
+    text-decoration: underline;
+}
+
+.footer__container--info {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.footer__info-nav {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    
+}
+
+.legal-nav__ul {
+    display: flex;
+    gap: 1em;
 }
