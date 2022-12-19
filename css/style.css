@@ -31,10 +31,11 @@ img {
 
 hr {
     margin: 1em 0;
-    border: 2px solid #006fb9;
+    border: 1px solid #b8b8b8;
 }
 
 .icon__img {
+    font-size: 1.25em;
     margin-top: 1em;
 }
 
@@ -173,11 +174,11 @@ hr {
 
 .item__link {
     color: #006fb9;
+    font-weight: bold;
 }
 
 .item__link:hover {
     text-decoration: underline;
-    font-weight: bolder;
 }
 
 .item__img {
@@ -237,11 +238,18 @@ hr {
     width: 1080px;
     margin: 0 auto;
     padding: 4em 0;
+}
+
+.footer__container--info {
+    padding: 2em 0;
+}
+
+.footer__nav {
     display: flex;
     gap: 1em;
 }
 
-.footer__nav {
+.footer-nav__column {
     width: 25%;
 }
 
@@ -251,27 +259,28 @@ hr {
 
 .footer-nav__a, .legal-nav__a {
     color: #8f8f8f;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .footer-nav__a:hover, .legal-nav__a:hover {
     text-decoration: underline;
 }
 
-.footer__container--info {
-    width: 1080px;
-    margin: 0 auto;
-    padding: 4em 0;
+.footer__section--info {
+    background-color: white;
 }
 
 .footer__info-nav {
     display: flex;
     gap: 1em;
     justify-content: space-between;
-    
 }
 
 .legal-nav__ul {
     display: flex;
     gap: 1em;
+}
+
+.legal-nav__a {
+    color: #006fb9;
 }
